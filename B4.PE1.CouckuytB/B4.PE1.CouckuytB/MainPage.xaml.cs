@@ -13,5 +13,15 @@ namespace B4.PE1.CouckuytB
         {
             InitializeComponent();
         }
+
+        private async void btnPictureGallery_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PictureGallery());
+        }
+
+        private async void btnWikiPage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new WikiPage());
+        }     
     }
 }
